@@ -1,0 +1,23 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 72px;
+    font-size: 1.25rem;
+}
+.menu li{
+    border-bottom: 4px solid transparent;
+    transition: border-color 1s;
+}
+.menu li:hover{
+    border-color: var(--primary-color);
+}
+@media (max-width:960px) {
+    .menu{
+        display: none;
+    }
+}
+@media(max-width:640px){
+    .menu{
+        display: none;
+    }
+}
