@@ -1,23 +1,47 @@
 .menu{
     display: flex;
-    justify-content: space-between;
-    gap: 72px;
-    font-size: 1.25rem;
+    justify-content: center;
+    gap: 100px;
+    font-size: 4rem;
+    background: rgba(51, 27, 106, 0.6);
+    width: 2560px;
+    height: 97px;
+
 }
 .menu li{
     border-bottom: 4px solid transparent;
     transition: border-color 1s;
 }
-.menu li:hover{
-    border-color: var(--primary-color);
+
+nav ul{
+    list-style: none;
 }
-@media (max-width:960px) {
-    .menu{
-        display: none;
-    }
+nav ul li{
+    display: inline-block;
 }
-@media(max-width:640px){
-    .menu{
-        display: none;
-    }
+nav ul li a{
+    padding: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+nav ul li button{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.btn-login{
+    height: 50px;
+    width: 100px;
+    margin: 17px 20 px;
+    display: block;
+    
+    
+   
+}
+.btn-cadastro{
+    height: 50px;
+    width: 100px;
+    margin: 17px 20 px;
 }

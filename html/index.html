@@ -3,32 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/img/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/icone.png">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/menu.css">
     <title>AyanCare</title>
 </head>
 <body>
     <header>
-        <div class="logo">
-         AyanCare
-    </div>
-    <nav>
+        <nav>
         <a href="#" class="container-barra">
             <i class="menu-barra"></i>
         </a>
         <ul class="menu">
+            <div class="logo">
+                <img src="/img/Logo.png" alt="AyanCare">
+            </div>
             <li>
-                <a href="#Sobre Nós">Sobre Nós</a>
+                <a href="#SobreNós">Sobre Nós</a>
             </li>
             <li>
-                <a href="#Plataformas">Plataformas</a>
+                <a href="#">Plataformas</a>
             </li>
             <li>
-                <a href="#Contato">Contato</a>
+                <a href="#">Contato</a>
             </li>
+            <li>
+<button type="button" class="btn-login">Faça Login</button>
+            </li>
+            <li>
+<button type="button" class="btn-cadastro">Cadastre-se</button>
+            </li>
+            
+            
         </ul>
     </nav>
     </header>
+    <main>
+        <div class="sobre">
+        <a href="#Sobre Nós" class="back" title="Voltar">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <section class="informacao" id="sobre">
+            <div>
+                <h1 class="sobre__name">Auxiliando Cuidadores em sua jornada diária </h1>
+                <span class="sobre__text">Nos dedicamos a melhorar a vida de cuidadores e enfermeiros domiciliares servindo nossa aplicação  como uma ferramenta, que simplifica o planejamento, aprimora a comunicação e permite que se concentrem no cuidado e nas conexões com os pacientes. Buscamos tornar o cuidado domiciliar mais eficiente, humano e gratificante. </span>
+            </div>
+        </section>
+        </div>
+    </main>
     
 </body>
 </html>
