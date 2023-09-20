@@ -38,23 +38,17 @@ nav ul li button{
     height:50px;
     width: 130px;
     display: flex;
-    background-color: aliceblue;
 }
 
 .btn-login{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     height: 50px;
-    width: 130px;
-    margin: 17px 20px;
+    width: 155px;
     color: white;
     background-color:  transparent;
-    border: 3px solid;
-    position: relative;
-    border-image: linear-gradient(to right, rgba(243, 216, 201, 1), rgba(134, 104, 246, 1)) 1;
-    
-    
-   
+    border: 3px solid #8a2dd2e6;
+    border-radius: 4px;
 }
 .btn-login::after{
     position: absolute;
