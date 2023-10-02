@@ -4,47 +4,68 @@
     box-sizing: border-box;
     
 }
-body{
-    background-image:url(/img/imagemDeFundo.png);
-    background-position: center;
-    background-size:cover;
+body {
+
+    background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
-}
-.sobre{
-    display: flex;
-    position: relative;
-    background: rgba(51, 27, 106, 0.6);
-    width: 947px;
-    height: 430px;
-    text-align: right;
-    border-radius: 20px;
+    background-color: #f0f0f0; /* Cor de fundo de fallback, se a imagem não carregar */
+    color: #333; /* Cor do texto para torná-lo legível na imagem de fundo */
     
+}
 
-    
-}
+
 .informacao{
-    display: flex;
-    justify-self: center;
-    padding: 0px 40px;
-    flex-direction: column;
-    align-items: flex-end;
-
-}
-.sobre__name{
+    display: block;
+    background-color:  transparent;
+    background:#331b6a99;
+    width: 947px;
+    height: 483px;
+    border-radius: 12px;
     font-family: 'Poppins', sans-serif;
-    color: white;
-    text-align: right;
-    font-size: 64px;
-    width: 700px;
-
+   
 }
-.sobre__text{
-    font-family: 'Manrope', sans-serif;
-    color: white;
-    font-style: normal;
-    font-weight: 50;
-    line-height: 30px;
+.titulo-da-informacao{
+    display: flex;
+    width: 704px;
+    height: 268px;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFF;
     text-align: right;
-    
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90px; /* 140.625% */
+}
+.texto-da-informacao{
+    width: 884px;
+    color: rgba(255, 255, 255, 0.80);
+    text-align: right;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+}
+.imagem-de-fundo{
+width: 100%;
+height: 100vh;
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url(../img/imagemDeFundo.png);
+}
+main{
+    background-color: #35225F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sobre-empresa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1800px;
+    width: 80vw;
+    border: #FFF 2px solid;
 }
