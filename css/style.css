@@ -9,7 +9,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #f0f0f0; /* Cor de fundo de fallback, se a imagem não carregar */
-    color: #333; /* Cor do texto para torná-lo legível na imagem de fundo */
     
 }
 
@@ -22,6 +21,8 @@ body {
     height: 483px;
     border-radius: 12px;
     font-family: 'Poppins', sans-serif;
+    margin-top: 200px;
+    margin-left: 1450px;
    
 }
 .titulo-da-informacao{
@@ -65,7 +66,62 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 1800px;
-    width: 80vw;
     border: #FFF 2px solid;
+    width: 1216px;
+    height: 1830px;
+    margin-top: 500px;
+}
+.sobre-nos{
+    display: flex;
+    justify-content:center ;
+    flex-direction: column;
+
+
+}
+.subtitulo-sobre-nos{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px; /* 122.222% */
+    margin-top: 100px;
+}
+.texto-sobre-nos{
+    display: flex;
+    color: #9986BD;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px; /* 300% */
+    padding: 29px;
+    
+}
+.subtitulo-plataforma{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px; 
+    margin-top: 70px;
+}
+.palavra-plataforma{
+    color: #101828;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}
+.texto-plataforma{
+    color: #667085;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
 }
