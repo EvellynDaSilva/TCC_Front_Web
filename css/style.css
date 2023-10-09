@@ -149,8 +149,8 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    display: flex;
     column-count: 1;
+
 
 }
 
@@ -186,17 +186,29 @@ span {
 }
 
 .coluna1 {
-    display: flex;
+    /* display: flex;
     column-count: 1;
     column-gap: 5px;
-    flex-direction: column;
+    flex-direction: column;*/
+    display: flex;
+    width: 1141px;
+    flex-direction: row;
+    align-items: center;
+    column-count: 2;
+    gap: 30px;
 }
 
 .coluna2 {
-    display: flex;
-    column-count: 0;
+    /*display: flex;
+    column-count: 1;
     column-gap: 5px;
-    flex-direction: column;
+    flex-direction: column;*/
+    display: flex;
+    width: 1141px;
+    flex-direction: row;
+    align-items: center;
+    column-count: 2;
+    gap: 30px;
 }
 
 h4 {
@@ -207,7 +219,6 @@ h4 {
     font-weight: 600;
     line-height: 48px;
     margin-top: 50px
-   
 }
 
 .fundo-escuro {
@@ -222,3 +233,34 @@ h4 {
     flex-shrink: 0;
     background-color: #1f1338;
 }
+
+form {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
