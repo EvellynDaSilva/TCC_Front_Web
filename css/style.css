@@ -14,18 +14,25 @@ body {
 
 }
 
+.field-informacao{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
 .informacao {
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-color: transparent;
     background: #331b6a99;
     width: 947px;
     height: 483px;
     border-radius: 12px;
     font-family: 'Poppins', sans-serif;
-    margin-top: 200px;
-    margin-left: 1450px;
-
+    margin-right: 5rem;
+    align-self: center;
 }
 
 .titulo-da-informacao {
@@ -62,6 +69,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../img/imagemDeFundo.png);
+    margin-top: -115px;
 }
 
 main {
@@ -74,31 +82,34 @@ main {
 .sobre-empresa {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     border: #FFF 2px solid;
-    width: 1216px;
+    width: 80vw;
     height: 1830px;
-    margin-top: 500px;
 }
 
-.sobre-nos {
+.Sobre-nos {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 5rem;
+    
 
 
 }
 
 .subtitulo-sobre-nos {
+    display: flex;
+    justify-content: center;
     color: #FFF;
     text-align: center;
     font-family: Poppins;
     font-size: 36px;
     font-style: normal;
     font-weight: 600;
-    line-height: 44px;
-    /* 122.222% */
-    margin-top: 50px;
+    
+
+ 
 }
 
 .texto-sobre-nos {
@@ -110,20 +121,25 @@ main {
     font-style: normal;
     font-weight: 600;
     line-height: 48px;
-    /* 300% */
     padding: 29px;
 
 }
-
+.Plataformas{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
 .subtitulo-plataforma {
     color: #FFF;
     text-align: center;
+    justify-self: center;
+    display: flex;
     font-family: Poppins;
     font-size: 36px;
     font-style: normal;
     font-weight: 600;
     line-height: 44px;
-    margin-top: 70px;
+
 }
 
 .palavra-plataforma {
@@ -191,9 +207,9 @@ span {
     column-gap: 5px;
     flex-direction: column;*/
     display: flex;
-    width: 1141px;
+    width: 80vw;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     column-count: 2;
     gap: 30px;
 }
@@ -204,9 +220,9 @@ span {
     column-gap: 5px;
     flex-direction: column;*/
     display: flex;
-    width: 1141px;
+    width: 80vw;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     column-count: 2;
     gap: 30px;
 }
@@ -218,7 +234,7 @@ h4 {
     font-style: normal;
     font-weight: 600;
     line-height: 48px;
-    margin-top: 50px
+   
 }
 
 .fundo-escuro {
@@ -235,32 +251,84 @@ h4 {
 }
 
 form {
-    font-family: Arial, sans-serif;
-    color: #333;
+    font-family: Poppins;
+    color: #fff;
     margin: 0 auto;
     max-width: 600px;
     padding: 20px;
-    border: 1px solid #ccc;
-  }
-  label {
+
+}
+
+label {
     display: block;
     margin-bottom: 10px;
-  }
-  input,
-  textarea {
+}
+
+input,
+textarea {
     display: block;
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-  }
-  button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+button:hover {
+    /* border-radius: 8px; */
+    border: 2px solid #F8F0EC;
+    /*box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);*/
+}
+.content form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.span-required{
+    font-size: 12px;
+    margin: 3px 0 0 1px;
+    color: var(--color-red);
+    display: none;
+}
+
+.inputs{
+    padding: 8px 5px;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--color-dark1);
+    border: 2px solid var(--color-dark1);
+    color: var(--color-white);
+    width: 100%;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+
+.box-select{
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    gap: 1rem;
+}
+
+button[type="submit"]{
+    padding: 1rem;
+    font-size: 1rem;
+    outline: none;
     border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    background-color: var(--color-purple2);
+    color: var(--color-white);
     cursor: pointer;
-  }
-  button:hover {
-    background-color: #45a049;
-  }
+    transition: .3s;
+}
+
+

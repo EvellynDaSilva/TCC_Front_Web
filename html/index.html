@@ -13,10 +13,13 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/menu.css" />
     <link rel="stylesheet" href="../css/cards.css" />
+    <link rel="stylesheet" href="../css/reclamacao.css" />
+    <link rel="stylesheet" href="../js/script.js" />
     <title>AyanCare</title>
   </head>
   <body>
     <header>
+      <div class="field-menu">
       <nav>
         <a href="#" class="container-barra">
           <i class="menu-barra"></i>
@@ -42,20 +45,23 @@
           </li>
         </ul>
       </nav>
+    </div>
     </header>
     <main>
       <section class="imagem-de-fundo">
-        <div class="informacao">
-          <h1 class="titulo-da-informacao">
-            Auxiliando Cuidadores em sua jornada diária
-          </h1>
-          <p class="texto-da-informacao">
-            Nos dedicamos a melhorar a vida de cuidadores e enfermeiros
-            domiciliares servindo nossa aplicação como uma ferramenta, que
-            simplifica o planejamento, aprimora a comunicação e permite que se
-            concentrem no cuidado e nas conexões com os pacientes. Buscamos
-            tornar o cuidado domiciliar mais eficiente, humano e gratificante.
-          </p>
+        <div class="field-informacao">
+          <div class="informacao">
+            <h1 class="titulo-da-informacao">
+              Auxiliando Cuidadores em sua jornada diária
+            </h1>
+            <p class="texto-da-informacao">
+              Nos dedicamos a melhorar a vida de cuidadores e enfermeiros
+              domiciliares servindo nossa aplicação como uma ferramenta, que
+              simplifica o planejamento, aprimora a comunicação e permite que se
+              concentrem no cuidado e nas conexões com os pacientes. Buscamos
+              tornar o cuidado domiciliar mais eficiente, humano e gratificante.
+            </p>
+          </div>
         </div>
         <div class="cards">
           <div class="card-Praticidade">
@@ -97,6 +103,7 @@
       </section>
 
       <div class="sobre-empresa">
+        
         <div class="Sobre-nos">
           <h2 class="subtitulo-sobre-nos">Sobre Nós</h2>
           <p class="texto-sobre-nos">
@@ -117,15 +124,15 @@
           <h2 class="subtitulo-plataforma">Plataformas</h2>
           <div class="cards">
             <div class="card-cuidadores">
-              <img src="../img/Notebook.png" alt="">
-              <h2  class="palavra- plataforma">Cuidadores</h2>
+              <img src="../img/Notebook.png" alt="" />
+              <h2 class="palavra- plataforma">Cuidadores</h2>
               <p class="texto-plataforma">
                 Cuidadores podem gerenciar seus relatórios e visualizar agenda e
                 pacientes via Desktop.
               </p>
             </div>
             <div class="card-cuidadores-pacientes">
-              <img src="../img/Smartphone.png" alt="">
+              <img src="../img/Smartphone.png" alt="" />
               <h2 class="palvra-plataforma">Cuidadores e Pacientes</h2>
               <p class="texto-plataforma">
                 Cuidadores e Pacientes podem ter acesso a todas as
@@ -137,42 +144,96 @@
         <div class="valores-da-AyanCare">
           <h2 class="titulo-valores">Valores da AyanCare</h2>
           <div class="coluna1">
-
-          <p class="paragrafo-valores">
-            <span> Inovação Tecnológica:</span> Abraçamos a inovação como parte
-            fundamental do nosso trabalho. Estamos empenhados em explorar
-            constantemente novas soluções tecnológicas e práticas de
-            desenvolvimento para criar aplicativos de saúde de vanguarda.
-          </p>
-          <p class="paragrafo-valores">
-            <span>Colaboração e Parcerias:</span>Valorizamos parcerias
-            estratégicas e colaborações com outras empresas e profissionais de
-            saúde para criar soluções holísticas e eficazes.
-          </p>
-          
-        </div>
+            <p class="paragrafo-valores">
+              <span> Inovação Tecnológica:</span> Abraçamos a inovação como
+              parte fundamental do nosso trabalho. Estamos empenhados em
+              explorar constantemente novas soluções tecnológicas e práticas de
+              desenvolvimento para criar aplicativos de saúde de vanguarda.
+            </p>
+            <p class="paragrafo-valores">
+              <span>Colaboração e Parcerias:</span>Valorizamos parcerias
+              estratégicas e colaborações com outras empresas e profissionais de
+              saúde para criar soluções holísticas e eficazes.
+            </p>
+          </div>
           <div class="coluna2">
             <p class="paragrafo-valores">
               <span> Excelência Técnica:</span> Buscamos constantemente a
               excelência em nosso trabalho de desenvolvimento, impulsionando a
               qualidade e a eficácia de nossos aplicativos.
             </p>
-          <p class="paragrafo-valores">
-            <span>Compromisso com a Saúde:</span>Nosso compromisso é melhorar a
-            saúde e o bem-estar das pessoas por meio de tecnologia. Valorizamos
-            profundamente a responsabilidade de criar aplicativos que promovam a
-            saúde e a qualidade de vida.
-          </p>
-        </div>
+            <p class="paragrafo-valores">
+              <span>Compromisso com a Saúde:</span>Nosso compromisso é melhorar
+              a saúde e o bem-estar das pessoas por meio de tecnologia.
+              Valorizamos profundamente a responsabilidade de criar aplicativos
+              que promovam a saúde e a qualidade de vida.
+            </p>
+          </div>
         </div>
       </div>
       <h4>©2023AyanCorporation</h4>
     </main>
-    
+
     <section class="fundo-escuro">
-    
-    <h3>Contate-nos</h3>
-    
-  </section>
+      <div class="content">
+        <h3>Contate-nos</h3>
+        <h1>Alguma Reclamação ou Sujestão?</h1>
+        <h2>Amaríamos ouvir você. Mande um e-mail.</h2>
+        <form id="form">
+          <div>
+            <p>Primeiro nome</p>
+            <input
+              type="text"
+              placeholder="Primeiro nome"
+              class="input-required"
+              oninput="nameValidate()"
+            />
+            <span class="span-required"
+              >Nome deve ter no mínimo 3 caracteres</span
+            >
+          </div>
+          <div>
+            <p>Sobrenome</p>
+            <input
+              type="text"
+              placeholder="Sobrenome"
+              class="input-required"
+              oninput="surnameValidate()"
+            />
+            <span class="span-required"
+              >Sobrenome deve ter no mínimo 3 caracteres</span
+            >
+          </div>
+          <div>
+            <p>E-mail</p>
+            <input
+              type="text"
+              placeholder="you@company.com"
+              class="input-required"
+              oninput="emailValidate()"
+            />
+            <span class="span-required">Digite um email válido</span>
+          </div>
+          <p>Mensagem</p>
+          <textarea
+            class="inputs"
+            name="mensagem"
+            id="mensagem"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div>
+            <input
+              type="text"
+              id="Y"
+              value=""
+              name="You agree to our friendly privacy policy."
+            />
+            <label for="Y">You agree to our friendly privacy policy.</label>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
