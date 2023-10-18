@@ -1,10 +1,108 @@
-.content h1{
+.content h1 {
     color: #FFF;
     text-align: center;
-    font-family: Inter;
+    font-family: Poppins;
     font-size: 36px;
     font-style: normal;
     font-weight: 600;
-    line-height: 44px; 
-    letter-spacing: -0.72px;
+
+
+}
+
+.content form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    display: flex;
+
+
+}
+
+.primeiro-nome {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    align-self: stretch;
+    display: flex;
+}
+
+.input-nome {
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+}
+
+.sobrenome {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    align-self: stretch;
+}
+
+.input-sobrenome {
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.input-email {
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.span-required {
+    font-size: 12px;
+    margin: 3px 0 0 1px;
+    color: var(--color-red);
+    display: none;
+}
+
+.inputs {
+    padding: 8px 5px;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--color-dark1);
+    border: 2px solid var(--color-dark1);
+    color: var(--color-white);
+    width: 100%;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+.inputs:focus {
+    border-color: var(--color-purple1);
+}
+
+.box-select {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    gap: 1rem;
+}
+
+button[type="submit"] {
+    /* padding: 1rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: .3s; */
+    display: flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+button[type="submit"]:hover {
+    background-color: var(--color-purple1);
 }
